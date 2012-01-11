@@ -1,0 +1,42 @@
+OVERVIEW
+
+Another attempt to use the pointclouds in openFrameworks 
+
+previous efforts 
+https://github.com/jvcleave/PCL_1-3-0_Libraries_for_OF 
+https://github.com/jvcleave/PCL_1-3-0_OF_Examples
+
+Fork/use this at your own peril - it is quite large and I ultimately would like to get it into the format of PCL_1-3-0_Libraries_for_OF
+However this is working with the latest OpenNI (if installed on the system) and may be helpful for someone trying to do something similar.
+
+
+NOTES
+
+Created using the PCL-1.4.0 source
+http://dev.pointclouds.org/attachments/download/610/PCL-1.4.0-Source.tar.bz2
+
+I did rename pcl/common/time.h in the source to pcl/common/pcl_common_time.h to avoid conflicts
+
+REQUIREMENTS
+libusb to be installed via OpenNI instructions 
+https://github.com/OpenNI/OpenNI/blob/master/README
+
+
+OpenNI 1.5.2.23
+Sensor-Bin-MacOSX-v5.1.0.41
+
+Binaries should be fine
+http://www.openni.org/Downloads/OpenNIModules.aspx
+
+SensorKinect https://github.com/avin2/SensorKinect
+
+If you install Nite I recommend you do it last (particularly after the Sensor installs). This may be a known process but I didn't figure it out until multiple head-to-desk contacts.
+
+Almost all of the project paths, etc are in Project.xcconfig if you want to use your own libraries
+
+TODO:
+Break out PCL, VTK, Boost, etc into seperate xcconfig files (Project.xcconfig is a rat's nest)
+
+Break out PCL into a seperate Xcode project to be included (much like OF)
+
+Try self-contained OpenNI libs similar to gameoverhack's versions in ofxOpenNI
