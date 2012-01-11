@@ -1,0 +1,71 @@
+//THE PATH TO THE ROOT OF OUR OF PATH RELATIVE TO THIS PROJECT.
+//THIS NEEDS TO BE DEFINED BEFORE CoreOF.xcconfig IS INCLUDED
+OF_PATH = ../../..
+
+//THIS HAS ALL THE HEADER AND LIBS FOR OF CORE
+#include "../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig"
+
+VTK_LIB_DIR = "$(PROJECT_DIR)/3rdPartyLibs/vtk_5-8/libs"
+VTK_MONOLITHIC = "$(VTK_LIB_DIR)/libVTK.a"
+
+OPENNI_INCLUDE_PATH = /usr/include/ni
+OPENNI_LIB_PATH = /usr/lib
+
+OPENNI_0 = "$(OPENNI_LIB_PATH)/libOpenNI.dylib"
+OPENNI_1 = "$(OPENNI_LIB_PATH)/libOpenNI.jni.dylib"
+OPENNI_2 = "$(OPENNI_LIB_PATH)/libXnCore.dylib"
+OPENNI_3 = "$(OPENNI_LIB_PATH)/libXnDDK.dylib"
+OPENNI_4 = "$(OPENNI_LIB_PATH)/libXnDeviceFile.dylib"
+OPENNI_5 = "$(OPENNI_LIB_PATH)/libXnDeviceSensorV2.dylib"
+OPENNI_6 = "$(OPENNI_LIB_PATH)/libXnDeviceSensorV2KM.dylib"
+OPENNI_7 = "$(OPENNI_LIB_PATH)/libXnFormats.dylib"
+OPENNI_8 = "$(OPENNI_LIB_PATH)/libXnVCNITE_1_5_2.dylib"
+OPENNI_9 = "$(OPENNI_LIB_PATH)/libXnVFeatures_1_5_2.dylib"
+OPENNI_10 = "$(OPENNI_LIB_PATH)/libXnVHandGenerator_1_5_2.dylib"
+OPENNI_11 = "$(OPENNI_LIB_PATH)/libXnVNite_1_5_2.dylib"
+OPENNI_12 = "$(OPENNI_LIB_PATH)/libXnVNITE.jni.dylib"
+
+OPENNI_LIBS = $(OPENNI_0) $(OPENNI_1) $(OPENNI_2) $(OPENNI_3) $(OPENNI_4) $(OPENNI_5) $(OPENNI_6) $(OPENNI_7) $(OPENNI_8) $(OPENNI_9) $(OPENNI_10) $(OPENNI_11) $(OPENNI_12)
+
+LIB_USB_HEADER = /opt/local/include
+LIB_USB = /opt/local/lib/libusb-1.0.dylib
+
+BOOST_HEADERS = "$(PROJECT_DIR)/3rdPartyLibs/boost_1_47_0/include"
+BOOST_LIB_DIR = "$(PROJECT_DIR)/3rdPartyLibs/boost_1_47_0/lib"
+
+LIB_BOOST_DATE_TIME = "$(BOOST_LIB_DIR)/boost_date_time-xgcc42-mt-1_47.a" 
+LIB_BOOST_IO = "$(BOOST_LIB_DIR)/boost_iostreams-xgcc42-mt-1_47.a" 
+LIB_BOOST_THREAD = "$(BOOST_LIB_DIR)/boost_thread-xgcc42-mt-1_47.a"
+LIB_BOOST_FILESYSTEM = "$(BOOST_LIB_DIR)/boost_filesystem-xgcc42-mt-1_47.a" 
+LIB_BOOST_SYSTEM = "$(BOOST_LIB_DIR)/boost_system-xgcc42-mt-1_47.a"
+
+BOOST_LIBS = $(LIB_BOOST_DATE_TIME) $(LIB_BOOST_IO) $(LIB_BOOST_THREAD) $(LIB_BOOST_FILESYSTEM) $(LIB_BOOST_SYSTEM) 
+
+PCL_SOURCE_PATH = "$(PROJECT_DIR)/pcl_1-4-0/include"
+PCL_LIB_DIR = "$(PROJECT_DIR)/pcl_1-4-0/libs"
+
+LIB_PCL_APPS = "$(PCL_LIB_DIR)/pcl_apps.a"
+LIB_PCL_RANGE_IMAGE = "$(PCL_LIB_DIR)/pcl_range_image.a"
+LIB_PCL_COMMON = "$(PCL_LIB_DIR)/pcl_common.a"
+LIB_PCL_RANGE_IMAGE_BORDER_EXTRACTOR = "$(PCL_LIB_DIR)/pcl_range_image_border_extractor.a"
+LIB_PCL_FEATURES = "$(PCL_LIB_DIR)/pcl_features.a"
+LIB_PCL_REGISTRATION = "$(PCL_LIB_DIR)/pcl_registration.a"
+LIB_PCL_FILTERS = "$(PCL_LIB_DIR)/pcl_filters.a"
+LIB_PCL_SAMPLE_CONSENSUS = "$(PCL_LIB_DIR)/pcl_sample_consensus.a"
+LIB_PCL_IO = "$(PCL_LIB_DIR)/pcl_io.a"
+LIB_PCL_SEARCH = "$(PCL_LIB_DIR)/pcl_search.a"
+LIB_PCL_KDTREE = "$(PCL_LIB_DIR)/pcl_kdtree.a"
+LIB_PCL_SEGMENTATION = "$(PCL_LIB_DIR)/pcl_segmentation.a"
+LIB_PCL_KEYPOINTS = "$(PCL_LIB_DIR)/pcl_keypoints.a"
+LIB_PCL_SURFACE = "$(PCL_LIB_DIR)/pcl_surface.a"
+LIB_PCL_OCTREE = "$(PCL_LIB_DIR)/pcl_octree.a"
+LIB_PCL_VISUALIZATION = "$(PCL_LIB_DIR)/pcl_visualization.a"
+
+PCL_LIBS = $(LIB_PCL_APPS) $(LIB_PCL_RANGE_IMAGE) $(LIB_PCL_COMMON) $(LIB_PCL_RANGE_IMAGE_BORDER_EXTRACTOR) $(LIB_PCL_FEATURES) $(LIB_PCL_REGISTRATION) $(LIB_PCL_FILTERS) $(LIB_PCL_SAMPLE_CONSENSUS) $(LIB_PCL_IO) $(LIB_PCL_SEARCH) $(LIB_PCL_KDTREE) $(LIB_PCL_SEGMENTATION) $(LIB_PCL_KEYPOINTS) $(LIB_PCL_SURFACE) $(LIB_PCL_OCTREE) $(LIB_PCL_VISUALIZATION)
+VTK_INCLUDE_DIR = "$(PROJECT_DIR)/3rdPartyLibs/vtk_5-8/include"
+VTK_LIBS = $(VTK_MONOLITHIC)
+
+OTHER_LDFLAGS = $(OF_CORE_LIBS) $(LIB_USB) $(VTK_LIBS) $(BOOST_LIBS) $(OPENNI_LIBS) $(PCL_LIBS)
+
+HEADER_SEARCH_PATHS = $(OF_CORE_HEADERS) $(BOOST_HEADERS) $(LIB_USB_HEADER)  $(OPENNI_INCLUDE_PATH) "$(PCL_SOURCE_PATH)/include" "$(PCL_SOURCE_PATH)/common/include" "$(PCL_SOURCE_PATH)/features/include"      "$(PCL_SOURCE_PATH)/filters/include" "$(PCL_SOURCE_PATH)/io/include" "$(PCL_SOURCE_PATH)/kdtree/include" "$(PCL_SOURCE_PATH)/keypoints/include" "$(PCL_SOURCE_PATH)/octree/include"  "$(PCL_SOURCE_PATH)/people/include" "$(PCL_SOURCE_PATH)/proctor/include" "$(PCL_SOURCE_PATH)/range_image/include" "$(PCL_SOURCE_PATH)/registration/include" "$(PCL_SOURCE_PATH)/sample_consensus/include" "$(PCL_SOURCE_PATH)/search/include" "$(PCL_SOURCE_PATH)/segmentation/include" "$(PCL_SOURCE_PATH)/simulation/include" "$(PCL_SOURCE_PATH)/surface/include" "$(PCL_SOURCE_PATH)/tracking/include" "$(PCL_SOURCE_PATH)/visualization/include"   "$(PROJECT_DIR)/3rdPartyLibs/flann-1.7.1/include" "$(PROJECT_DIR)/3rdPartyLibs/eigen-eigen-3.0.3" "$(PROJECT_DIR)/3rdPartyLibs/qhull-2011.1/include" "$(VTK_INCLUDE_DIR)" "$(VTK_INCLUDE_DIR)/Common" "$(VTK_INCLUDE_DIR)/Utilities" "$(VTK_INCLUDE_DIR)/VolumeRendering" "$(VTK_INCLUDE_DIR)/Rendering" "$(VTK_INCLUDE_DIR)/Charts" "$(VTK_INCLUDE_DIR)/Utilities/vtkalglib" "$(VTK_INCLUDE_DIR)/Infovis" "$(VTK_INCLUDE_DIR)/Geovis" "$(VTK_INCLUDE_DIR)/Views" "$(VTK_INCLUDE_DIR)/VolumeRendering" "$(VTK_INCLUDE_DIR)/Hybrid" "$(VTK_INCLUDE_DIR)/Widgets" "$(VTK_INCLUDE_DIR)/Rendering" "$(VTK_INCLUDE_DIR)/Charts" "$(VTK_INCLUDE_DIR)/Rendering/Testing/Cxx" "$(VTK_INCLUDE_DIR)/IO" "$(VTK_INCLUDE_DIR)/Imaging" "$(VTK_INCLUDE_DIR)/Graphics" "$(VTK_INCLUDE_DIR)/GenericFiltering" "$(VTK_INCLUDE_DIR)/Filtering" "$(VTK_INCLUDE_DIR)/Common" "$(VTK_INCLUDE_DIR)/Utilities" "$(VTK_INCLUDE_DIR)/Common/Testing/Cxx" "$(VTK_INCLUDE_DIR)/Utilities/vtklibproj4" "$(VTK_INCLUDE_DIR)/Utilities/DICOMParser" "$(VTK_INCLUDE_DIR)/Utilities/vtkfreetype/include" "$(VTK_INCLUDE_DIR)/Utilities/MaterialLibrary" "$(VTK_INCLUDE_DIR)/Utilities/verdict" "$(VTK_INCLUDE_DIR)/Utilities/vtkhdf5" "$(VTK_INCLUDE_DIR)/Utilities/vtkhdf5/src" "$(VTK_INCLUDE_DIR)/Utilities/utf8/source" "$(VTK_INCLUDE_DIR)/Utilities/vtkalglib" "$(VTK_INCLUDE_DIR)/Utilities/ftgl/src" "$(VTK_INCLUDE_DIR)/Utilities/ftgl"
+LIBRARY_SEARCH_PATHS = /usr/lib
