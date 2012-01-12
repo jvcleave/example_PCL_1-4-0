@@ -22,8 +22,9 @@
 		03A9D36614BD8ECF0004DC49 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D36014BD8ECF0004DC49 /* tinyxmlerror.cpp */; };
 		03A9D36714BD8ECF0004DC49 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D36114BD8ECF0004DC49 /* tinyxmlparser.cpp */; };
 		03A9D36814BD8ECF0004DC49 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D36314BD8ECF0004DC49 /* ofxXmlSettings.cpp */; };
+		3456D1FB14BF6E04009DB566 /* cameraCloudApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3456D1F914BF6E04009DB566 /* cameraCloudApp.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
-		E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworks.a */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
 		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
@@ -392,6 +393,8 @@
 		03A9D36114BD8ECF0004DC49 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		03A9D36314BD8ECF0004DC49 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		03A9D36414BD8ECF0004DC49 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
+		3456D1F914BF6E04009DB566 /* cameraCloudApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cameraCloudApp.cpp; sourceTree = "<group>"; };
+		3456D1FA14BF6E04009DB566 /* cameraCloudApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameraCloudApp.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -419,7 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
-				E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
 				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
 				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
 				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
@@ -1773,7 +1776,7 @@
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4328148138ABC890047C5CB /* openFrameworks.a */,
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1803,6 +1806,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				3456D1F914BF6E04009DB566 /* cameraCloudApp.cpp */,
+				3456D1FA14BF6E04009DB566 /* cameraCloudApp.h */,
 				0392D00814BEBF2200C3EDCD /* tutorialApps */,
 				03A9D31814BD8CFB0004DC49 /* testApp.cpp */,
 				03A9D31914BD8CFB0004DC49 /* testApp.h */,
@@ -1874,10 +1879,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E4328148138ABC890047C5CB /* openFrameworks.a */ = {
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = openFrameworks.a;
+			path = openFrameworksDebug.a;
 			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1920,6 +1925,7 @@
 				0392D01E14BEBF2200C3EDCD /* resamplingExample.cpp in Sources */,
 				0392D01F14BEBF2200C3EDCD /* statisticalOutlierRemovalExample.cpp in Sources */,
 				0392D02014BEBF2200C3EDCD /* voxelGridFilterExample.cpp in Sources */,
+				3456D1FB14BF6E04009DB566 /* cameraCloudApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
