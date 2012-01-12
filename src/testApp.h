@@ -2,7 +2,7 @@
 
 #include <pcl/io/openni_grabber.h>
 #include <pcl/features/integral_image_normal.h>
-#include <pcl-1.3/pcl/keypoints/sift_keypoint.h>
+#include <pcl/keypoints/sift_keypoint.h>
 #include "ofxPCL.h"
 
 #include "ofMain.h"
