@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0371696A14BC052A002B2200 /* openniGrabberExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0371696814BC052A002B2200 /* openniGrabberExample.cpp */; };
+		0392D01914BEBF2200C3EDCD /* greedyProjectionExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D00914BEBF2200C3EDCD /* greedyProjectionExample.cpp */; };
+		0392D01A14BEBF2200C3EDCD /* kdtreeSearchExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D00B14BEBF2200C3EDCD /* kdtreeSearchExample.cpp */; };
+		0392D01B14BEBF2200C3EDCD /* normalEstimationExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D00D14BEBF2200C3EDCD /* normalEstimationExample.cpp */; };
+		0392D01C14BEBF2200C3EDCD /* openNIGrabFrameApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D00F14BEBF2200C3EDCD /* openNIGrabFrameApp.cpp */; };
+		0392D01D14BEBF2200C3EDCD /* pointCloudCompressionExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D01114BEBF2200C3EDCD /* pointCloudCompressionExample.cpp */; };
+		0392D01E14BEBF2200C3EDCD /* resamplingExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D01314BEBF2200C3EDCD /* resamplingExample.cpp */; };
+		0392D01F14BEBF2200C3EDCD /* statisticalOutlierRemovalExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D01514BEBF2200C3EDCD /* statisticalOutlierRemovalExample.cpp */; };
+		0392D02014BEBF2200C3EDCD /* voxelGridFilterExample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0392D01714BEBF2200C3EDCD /* voxelGridFilterExample.cpp */; };
 		03A9D30214BD898C0004DC49 /* ofxPCL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D30014BD898C0004DC49 /* ofxPCL.cpp */; };
 		03A9D31A14BD8CFB0004DC49 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D31814BD8CFB0004DC49 /* testApp.cpp */; };
 		03A9D36514BD8ECF0004DC49 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D35E14BD8ECF0004DC49 /* tinyxml.cpp */; };
@@ -15,7 +23,7 @@
 		03A9D36714BD8ECF0004DC49 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D36114BD8ECF0004DC49 /* tinyxmlparser.cpp */; };
 		03A9D36814BD8ECF0004DC49 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A9D36314BD8ECF0004DC49 /* ofxXmlSettings.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
-		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworks.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
 		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
 		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
@@ -63,8 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0371696814BC052A002B2200 /* openniGrabberExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openniGrabberExample.cpp; sourceTree = "<group>"; };
-		0371696914BC052A002B2200 /* openniGrabberExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openniGrabberExample.h; sourceTree = "<group>"; };
+		0371696814BC052A002B2200 /* openniGrabberExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = openniGrabberExample.cpp; path = ../openniGrabberExample.cpp; sourceTree = "<group>"; };
+		0371696914BC052A002B2200 /* openniGrabberExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openniGrabberExample.h; path = ../openniGrabberExample.h; sourceTree = "<group>"; };
 		03716E0914BC0AA2002B2200 /* common.doxy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.doxy; sourceTree = "<group>"; };
 		03716E0C14BC0AA2002B2200 /* channel_properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = channel_properties.h; sourceTree = "<group>"; };
 		03716E0D14BC0AA2002B2200 /* cloud_properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cloud_properties.h; sourceTree = "<group>"; };
@@ -352,6 +360,22 @@
 		03716F9214BC0AA2002B2200 /* registration_visualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registration_visualizer.h; sourceTree = "<group>"; };
 		03716F9314BC0AA2002B2200 /* window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
 		03716F9814BC0AA2002B2200 /* visualization.doxy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = visualization.doxy; sourceTree = "<group>"; };
+		0392D00914BEBF2200C3EDCD /* greedyProjectionExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = greedyProjectionExample.cpp; sourceTree = "<group>"; };
+		0392D00A14BEBF2200C3EDCD /* greedyProjectionExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greedyProjectionExample.h; sourceTree = "<group>"; };
+		0392D00B14BEBF2200C3EDCD /* kdtreeSearchExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kdtreeSearchExample.cpp; sourceTree = "<group>"; };
+		0392D00C14BEBF2200C3EDCD /* kdtreeSearchExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kdtreeSearchExample.h; sourceTree = "<group>"; };
+		0392D00D14BEBF2200C3EDCD /* normalEstimationExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = normalEstimationExample.cpp; sourceTree = "<group>"; };
+		0392D00E14BEBF2200C3EDCD /* normalEstimationExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalEstimationExample.h; sourceTree = "<group>"; };
+		0392D00F14BEBF2200C3EDCD /* openNIGrabFrameApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = openNIGrabFrameApp.cpp; sourceTree = "<group>"; };
+		0392D01014BEBF2200C3EDCD /* openNIGrabFrameApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openNIGrabFrameApp.h; sourceTree = "<group>"; };
+		0392D01114BEBF2200C3EDCD /* pointCloudCompressionExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pointCloudCompressionExample.cpp; sourceTree = "<group>"; };
+		0392D01214BEBF2200C3EDCD /* pointCloudCompressionExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointCloudCompressionExample.h; sourceTree = "<group>"; };
+		0392D01314BEBF2200C3EDCD /* resamplingExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resamplingExample.cpp; sourceTree = "<group>"; };
+		0392D01414BEBF2200C3EDCD /* resamplingExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = resamplingExample.h; sourceTree = "<group>"; };
+		0392D01514BEBF2200C3EDCD /* statisticalOutlierRemovalExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = statisticalOutlierRemovalExample.cpp; sourceTree = "<group>"; };
+		0392D01614BEBF2200C3EDCD /* statisticalOutlierRemovalExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statisticalOutlierRemovalExample.h; sourceTree = "<group>"; };
+		0392D01714BEBF2200C3EDCD /* voxelGridFilterExample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = voxelGridFilterExample.cpp; sourceTree = "<group>"; };
+		0392D01814BEBF2200C3EDCD /* voxelGridFilterExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = voxelGridFilterExample.h; sourceTree = "<group>"; };
 		03A9D30014BD898C0004DC49 /* ofxPCL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPCL.cpp; sourceTree = "<group>"; };
 		03A9D30114BD898C0004DC49 /* ofxPCL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPCL.h; sourceTree = "<group>"; };
 		03A9D31814BD8CFB0004DC49 /* testApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testApp.cpp; sourceTree = "<group>"; };
@@ -395,7 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
-				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworks.a in Frameworks */,
 				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
 				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
 				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
@@ -1621,6 +1645,39 @@
 			path = tools;
 			sourceTree = "<group>";
 		};
+		0392D00814BEBF2200C3EDCD /* tutorialApps */ = {
+			isa = PBXGroup;
+			children = (
+				0392D02C14BEBFBD00C3EDCD /* checked */,
+			);
+			path = tutorialApps;
+			sourceTree = "<group>";
+		};
+		0392D02C14BEBFBD00C3EDCD /* checked */ = {
+			isa = PBXGroup;
+			children = (
+				0371696814BC052A002B2200 /* openniGrabberExample.cpp */,
+				0371696914BC052A002B2200 /* openniGrabberExample.h */,
+				0392D00914BEBF2200C3EDCD /* greedyProjectionExample.cpp */,
+				0392D00A14BEBF2200C3EDCD /* greedyProjectionExample.h */,
+				0392D00B14BEBF2200C3EDCD /* kdtreeSearchExample.cpp */,
+				0392D00C14BEBF2200C3EDCD /* kdtreeSearchExample.h */,
+				0392D01314BEBF2200C3EDCD /* resamplingExample.cpp */,
+				0392D01414BEBF2200C3EDCD /* resamplingExample.h */,
+				0392D01114BEBF2200C3EDCD /* pointCloudCompressionExample.cpp */,
+				0392D01214BEBF2200C3EDCD /* pointCloudCompressionExample.h */,
+				0392D00D14BEBF2200C3EDCD /* normalEstimationExample.cpp */,
+				0392D00E14BEBF2200C3EDCD /* normalEstimationExample.h */,
+				0392D01514BEBF2200C3EDCD /* statisticalOutlierRemovalExample.cpp */,
+				0392D01614BEBF2200C3EDCD /* statisticalOutlierRemovalExample.h */,
+				0392D01714BEBF2200C3EDCD /* voxelGridFilterExample.cpp */,
+				0392D01814BEBF2200C3EDCD /* voxelGridFilterExample.h */,
+				0392D00F14BEBF2200C3EDCD /* openNIGrabFrameApp.cpp */,
+				0392D01014BEBF2200C3EDCD /* openNIGrabFrameApp.h */,
+			);
+			name = checked;
+			sourceTree = "<group>";
+		};
 		03A9D2FF14BD898C0004DC49 /* ofxPCL */ = {
 			isa = PBXGroup;
 			children = (
@@ -1716,7 +1773,7 @@
 		E4328144138ABC890047C5CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+				E4328148138ABC890047C5CB /* openFrameworks.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1746,10 +1803,9 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				0392D00814BEBF2200C3EDCD /* tutorialApps */,
 				03A9D31814BD8CFB0004DC49 /* testApp.cpp */,
 				03A9D31914BD8CFB0004DC49 /* testApp.h */,
-				0371696814BC052A002B2200 /* openniGrabberExample.cpp */,
-				0371696914BC052A002B2200 /* openniGrabberExample.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 			);
 			path = src;
@@ -1818,10 +1874,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+		E4328148138ABC890047C5CB /* openFrameworks.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = openFrameworksDebug.a;
+			path = openFrameworks.a;
 			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1856,6 +1912,14 @@
 				03A9D36614BD8ECF0004DC49 /* tinyxmlerror.cpp in Sources */,
 				03A9D36714BD8ECF0004DC49 /* tinyxmlparser.cpp in Sources */,
 				03A9D36814BD8ECF0004DC49 /* ofxXmlSettings.cpp in Sources */,
+				0392D01914BEBF2200C3EDCD /* greedyProjectionExample.cpp in Sources */,
+				0392D01A14BEBF2200C3EDCD /* kdtreeSearchExample.cpp in Sources */,
+				0392D01B14BEBF2200C3EDCD /* normalEstimationExample.cpp in Sources */,
+				0392D01C14BEBF2200C3EDCD /* openNIGrabFrameApp.cpp in Sources */,
+				0392D01D14BEBF2200C3EDCD /* pointCloudCompressionExample.cpp in Sources */,
+				0392D01E14BEBF2200C3EDCD /* resamplingExample.cpp in Sources */,
+				0392D01F14BEBF2200C3EDCD /* statisticalOutlierRemovalExample.cpp in Sources */,
+				0392D02014BEBF2200C3EDCD /* voxelGridFilterExample.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
