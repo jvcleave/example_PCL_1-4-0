@@ -15,7 +15,11 @@ NOTES
 Created using the PCL-1.4.0 source
 http://dev.pointclouds.org/attachments/download/610/PCL-1.4.0-Source.tar.bz2
 
-I did rename pcl/common/time.h in the source to pcl/common/pcl_common_time.h to avoid conflicts
+Changes to source 
+ - renamed pcl/common/time.h in the source to pcl/common/pcl_common_time.h to avoid conflicts
+ - changed references to <GL/gl.h> to <OpenGL/gl.h>
+ - changed references to <GL/glut.h> to <GLUT/glut.h>
+ 
 
 REQUIREMENTS
 libusb to be installed via OpenNI instructions 
@@ -33,6 +37,12 @@ SensorKinect https://github.com/avin2/SensorKinect
 If you install Nite I recommend you do it last (particularly after the Sensor installs). This may be a known process but I didn't figure it out until multiple head-to-desk contacts.
 
 Almost all of the project paths, etc are in Project.xcconfig if you want to use your own libraries
+
+If you get a "OpenNi Error, No file found!" copy
+
+COPY_CONTENTS_TO_etc/openni
+
+to /etc (so it will be /etc/openni)
 
 TODO:
 Break out PCL, VTK, Boost, etc into seperate xcconfig files (Project.xcconfig is a rat's nest)
