@@ -11,7 +11,7 @@ void cameraCloudApp::setup(){
 }
 void cameraCloudApp::onCloudData (const pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr &cloud)
 {
-	cout << cloud->size() << endl;
+	//cout << cloud->size() << endl;
 	//mutex.lock();
 	/**cloud = *_cloud;
 	 passthrough.setFilterLimits(minZ.getValue(),maxZ.getValue());
@@ -20,19 +20,29 @@ void cameraCloudApp::onCloudData (const pcl::PointCloud<pcl::PointXYZRGB>::Const
 	 isNewFrame = true;*/
 	//mutex.unlock();
 	const size_t num_point = cloud->points.size();
-	if (mesh.getNumVertices() != num_point) mesh.getVertices().resize(num_point);
-	
+	//mesh.clear();
+	if (mesh.getNumVertices() != num_point) 
+	{
+		mesh.getVertices().resize(num_point);
+		mesh.getColors().resize(num_point);
+		//mesh.getColors().resize(num_point);
+	}	
+	float scale = 50.0;
 	for (int i = 0; i < num_point; i++)
 	{
+		
 		pcl::PointXYZRGB p = cloud->points[i];
-		mesh.setVertex(i, ofVec3f(p.x, p.y, p.z));
-		//ofFloatColor color(p.r, p.g, p.b);
-		//mesh.setColor(i, color);
+		//cout << p.r << " " <<  p.g << " " << p.b << endl;
+		ofColor pointColor(p.r, p.g, p.b);
+		
+		mesh.setVertex(i, ofVec3f(p.x*scale, -p.y*scale, p.z*scale));
+		//ofFloatColor ofColor(p.r, p.g, p.b);
+		mesh.setColor(i, pointColor);
 	}
 }
 //--------------------------------------------------------------
 void cameraCloudApp::update(){
-
+	ofSetWindowTitle(ofToString(ofGetFrameRate()));
 }
 
 //--------------------------------------------------------------
@@ -85,4 +95,8 @@ void cameraCloudApp::gotMessage(ofMessage msg){
 //--------------------------------------------------------------
 void cameraCloudApp::dragEvent(ofDragInfo dragInfo){ 
 
+}
+void cameraCloudApp::exit()
+{
+	interface->stop();
 }
