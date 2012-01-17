@@ -43,7 +43,7 @@
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/surface/concave_hull.h>
 #include <pcl/console/parse.h>
-#include <pcl/common/pcl_common_time.h>
+#include <pcl/common/time.h>
 #include <pcl/visualization/cloud_viewer.h>
 
 using namespace pcl;
